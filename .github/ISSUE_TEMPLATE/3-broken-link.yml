@@ -1,0 +1,26 @@
+name: 링크가 깨졌어요
+description: 출처 링크가 404 이거나 엉뚱한 곳으로 갈 때
+labels: [링크]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        기관이 사이트를 개편하면 예고 없이 주소가 바뀝니다.
+        매주 기계가 검사하지만 봇을 막는 곳은 놓칩니다.
+  - type: input
+    id: page
+    attributes:
+      label: 어느 페이지에 있는 링크인가요
+      placeholder: https://michigan.metacog.co.kr/essentials/drivers-license/
+    validations:
+      required: true
+  - type: input
+    id: broken
+    attributes:
+      label: 깨진 링크 주소
+    validations:
+      required: true
+  - type: input
+    id: correct
+    attributes:
+      label: 새 주소 (아신다면)
