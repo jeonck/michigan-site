@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://michigan.metacog.co.kr/sitemap.xml

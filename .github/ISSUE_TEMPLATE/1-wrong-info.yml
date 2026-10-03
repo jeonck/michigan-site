@@ -1,0 +1,44 @@
+name: 정보가 틀렸어요
+description: 사이트에 적힌 내용이 사실과 다르거나 낡았을 때
+labels: [정보수정]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        규정과 가격은 자주 바뀝니다. 알려 주시면 확인해서 고칩니다.
+        **공식 출처 링크를 같이 주시면 훨씬 빠릅니다.**
+  - type: input
+    id: page
+    attributes:
+      label: 어느 페이지인가요
+      description: 주소를 붙여 넣거나 문서 제목을 적어 주세요
+      placeholder: https://michigan.metacog.co.kr/essentials/ssn/
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: 무엇이 틀렸나요
+      description: 사이트에 적힌 내용과 실제가 어떻게 다른지
+      placeholder: |
+        사이트: "예약 없이 방문 가능"
+        실제: 2026년 8월부터 온라인 예약 필수로 바뀜
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 출처 (있으면)
+      description: 기관 공식 페이지 주소. 이게 있으면 바로 반영됩니다
+      placeholder: https://www.ssa.gov/...
+  - type: dropdown
+    id: how
+    attributes:
+      label: 어떻게 아셨나요
+      options:
+        - 공식 페이지에서 확인했다
+        - 직접 가서 겪었다
+        - 다른 사람에게 들었다
+        - 기억이 가물가물하다
+    validations:
+      required: true

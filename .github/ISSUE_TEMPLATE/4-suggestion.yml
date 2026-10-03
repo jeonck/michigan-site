@@ -1,0 +1,22 @@
+name: 이런 내용도 있으면
+description: 빠진 주제나 새로 다뤘으면 하는 것
+labels: [제안]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 무엇이 아쉬웠나요
+      description: 어떤 상황에서 무엇을 찾다가 못 찾으셨는지 적어 주시면 가장 도움이 됩니다
+      placeholder: |
+        아이 예방접종 기록을 한국에서 가져왔는데 학교에 어떻게 내는지 못 찾았습니다.
+    validations:
+      required: true
+  - type: dropdown
+    id: when
+    attributes:
+      label: 언제 필요한 정보인가요
+      options:
+        - 도착 직후 (첫 달)
+        - 정착 중 (1~3개월)
+        - 자리 잡은 뒤
+        - 시기와 무관
