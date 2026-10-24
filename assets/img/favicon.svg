@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Michigan — mitten">
+  <rect width="64" height="64" rx="14" fill="#f6efe4"/>
+  <!-- the mitten: Lower Peninsula shape, thumb to the right -->
+  <path d="M24 12 C30 10 37 11 40 15 C42 18 43 22 42 26 L43 27 C47 24 52 26 53 31 C54 36 51 40 47 42 L46 44 C46 49 42 53 36 53 L22 53 C18 53 15 50 15 46 L15 24 C15 17 19 13 24 12 Z" fill="#2f5f8f"/>
+  <path d="M22 53 L22 46 L38 46 L38 53" fill="none" stroke="#f6efe4" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="26.5" cy="30.5" r="1.9" fill="#f6efe4"/>
+  <circle cx="34.5" cy="30.5" r="1.9" fill="#f6efe4"/>
+  <path d="M27 37 C28.5 38.6 32.5 38.6 34 37" stroke="#f6efe4" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+</svg>
