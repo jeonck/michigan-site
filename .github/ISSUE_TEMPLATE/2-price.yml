@@ -1,0 +1,57 @@
+name: 가격 제보
+description: 장바구니 가격 비교에 실을 실제 가격
+labels: [가격제보]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **실제로 확인한 가격만 싣습니다.** 영수증, 매장 표시가, 공식 온라인 표시가
+        셋 중 하나여야 합니다. 추정치나 전해 들은 가격은 넣지 않습니다 —
+        틀린 가격은 없는 것보다 나쁩니다.
+
+        [현재 가격 페이지](https://michigan.metacog.co.kr/prices/)
+  - type: input
+    id: item
+    attributes:
+      label: 품목
+      placeholder: 삼겹살 (pork belly)
+    validations:
+      required: true
+  - type: input
+    id: store
+    attributes:
+      label: 매장
+      placeholder: H Mart 미시건점
+    validations:
+      required: true
+  - type: input
+    id: price
+    attributes:
+      label: 가격과 수량
+      description: 총액과 몇 개·몇 파운드인지 함께
+      placeholder: $12.99 / 2 lb
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: 어디서 확인하셨나요
+      options:
+        - 영수증
+        - 매장 표시가
+        - 공식 온라인 표시가
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 확인한 날짜
+      placeholder: 2026-09-07
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: 덧붙일 것
+      description: 할인가였는지, 회원가였는지, 브랜드나 규격 같은 것
+      placeholder: 할인가. 정가는 $16.99
